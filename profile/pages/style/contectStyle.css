@@ -1,0 +1,356 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sideImgBg{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;        ;
+
+}
+
+.profileDp{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background: yellow;
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px gray;
+    border-radius: 50%;
+}
+#section{
+    height: 100vh;
+    overflow: hidden;
+    
+}
+.contectEntryForm{
+    width: 100%;
+    height: 100vh;
+   
+}
+.heading{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    font-weight:600;
+    color: #3992FF;
+    font-size: 40px;
+}
+.container{
+    width: 330px;
+    height: 250px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+    border: 1.5px solid #FF7466;
+    border-top: none;
+    border-right: none;
+    padding: 25px;
+    padding-right: 0;
+    padding-left: 35px;
+    /* display: none; */
+}
+.containericon{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+.fa-plus-circle{
+    font-size: 40px;
+    color: #FF7466;
+    font-weight: bolder;
+}
+
+
+select{
+    margin-bottom: 25px;
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    box-shadow: 1px 1px 10px #ff0000;
+
+}
+input[type=text],input[type=number]{
+    width: 100%;
+    height: 35px;
+    border: none;
+    box-shadow: 1px 1px 5px #ccc;
+    border-left: 5px solid #3992FF;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+input::placeholder{
+    font-size: 12px;
+}
+
+.addBtn{
+    width:80px;
+    height: 35px;
+    border: none;
+    background-color: yellow;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 215px;
+
+}
+
+#successfullySaved{
+    font-family: sans-serif;
+    font-weight: bold;
+    position: absolute;
+    bottom: 30px;
+    display: none;
+}
+
+#contectRestore{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contactRestoreContainer{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.restoreCloseBtn{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border: none;
+    position: relative;
+    top: 0px;
+    right: -100%;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 15px;
+    line-height: 1px;
+    color: white;
+    transition: 0.2s;
+}
+
+.restoreCloseBtn:hover{
+    color: red;
+    background-color: white;
+    border: 3px solid red;
+}
+.contactRestoreHeading{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    font-weight:600;
+    color: #3992FF;
+    font-size: 40px;
+}
+
+#contactStore{
+    width: 80%;
+    height: auto;
+    
+    margin: 0 auto;
+    margin-top: 50px;
+}
+th{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 40px;
+    border: 1px solid #ccc;
+    width: 20% ;
+}
+
+/* contect restore coding end */
+
+/* sidebar coding start */
+
+
+.sideBar{
+    width: 350px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: black;
+    padding: 20px;
+    padding-top: 10px;
+    /* display: none; */
+}
+
+.contactList{
+    color: red;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contectListCont{
+    width: 100%;
+    height: 700px;
+    margin-top: 10px;
+    color: white;
+    overflow-y: scroll;
+}
+
+.contectListCont::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    background-color: #35383d;
+}
+
+
+.contectListCont::-webkit-scrollbar-thumb{
+    background-color: rgb(95, 93, 93);
+}
+
+input[type=search]{
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+}
+
+input[type=search]::placeholder{
+    font-weight: lighter;
+    font-size: 11px;
+}
+
+fieldset{
+    padding: 15px;
+    width: 95%;
+    margin-bottom: 15px;
+    padding-top: 5px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+legend{
+    font-family: calibri;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 0px;
+    color: yellow;
+    padding: 5px;
+}
+
+
+li{
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-bottom: 5px;
+    list-style: none;
+    padding: 5px;
+}
+
+#activityBtnCont{
+    width: 100%;
+    height: 20px;
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    display: flex;
+    justify-content: start;
+
+}
+
+.activity_icon{
+    margin-right: 10px;
+    color: yellow;
+    cursor: pointer;
+}
+
+
+.span-saved{
+    color: red;
+    font-family: sans-serif;
+    padding-top: 15px;
+    display: none;
+}
+
+.restore-logout-cont{
+    width: 350px;
+    height: 40px;
+    background-color: rgb(235, 227, 227);
+    margin-left:-20px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.restore,.logout{
+    background-color: rgb(235, 227, 227);
+    /* border: 1px solid red; */
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    width: 120px;
+}
+
+.logoutContainer{
+    width: 250px;
+    height: 120px;
+    /* background-color: red; */
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+
+.contact-restore-container{     
+    width: 100%;
+    height: 100vh;
+    border: 1px solid red;
+    position: absolute;
+    top: 0;
+}
+
+#deletedContectHeading{
+    color : #3992FF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin: 50px;
+}
+
+#restoreTable{
+    border: 1px solid gray;
+    height: auto;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.tableRow{
+    height: 50px;
+    
+}
+
+td{
+    border: 1px solid #ccc;
+    font-family: sans-serif;
+    color: gray;
+    text-align: center;
+}

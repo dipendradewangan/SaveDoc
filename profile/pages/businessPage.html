@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="style/businessStyle.css">
+    <link rel="stylesheet" href="style/animate.css">
+</head>
+
+<body>
+    <img class="sideImgBg" src="images/sideImg.png" alt="sideImg">
+    <div class="profileDp"></div>
+    <h1 class="heading">Business Management System</h1>
+    <p class="tagLine">Manage your all business details like ledger, voucher, tax, balance sheet and many more</p>
+    <div class="container">
+        <div class="ActivityBtnCont">
+            <div class="ActivityIconCont">
+                <i class="fas fa-home activityIcon"></i>
+            </div>
+            <button class="activityBtn">Create Company</button>
+            <div class="creatFormContainer">
+                <div class="InnerCreatFormContainer" >
+                    <form>
+                        <input type="text" name="companyName" placeholder="Company name">
+                        <br>
+                        <input type="text" name="mailingName" placeholder="Mailing name ex: companyname.pvt.ltd or company.govt.ltd">
+                        <br>
+                        <input type="text" name="address" placeholder="address">
+                        <br>
+                        <input type="number" name="phoneNumber" placeholder="Phone Number">
+                        <br>
+                        <input type="text" name="faxNumber" placeholder="Fax Number">
+                        <br>
+                        <input type="email" name="email" placeholder="E-mail">
+                        <br>
+                        <input type="text" name="website" placeholder="Website">
+                        <br>
+                        <span id="fyear">Financial Year</span>
+                        <br>
+                        <input type="date">
+                        <br>
+                        <span id="stype">stock type</span>
+                        <br>
+                        <select name="stockType" >
+                            <option value="AccountsOnly">Accounts Only</option>
+                            <option value="AccountsWithInentary">Accounts With Inventary</option>
+                        </select>
+                        <br>
+                        <input type="submit" value="Create Now !">
+                    </form>
+                </div>
+            </div>
+            <div class="CompanyCreatedSuccessfullyContainer">
+                <div class="innerCompanyCreatedSuccessfullyContainer">
+                    <div class="tickIconContainer"><i class="fas fa-check-circle tickIcon"></i></div>
+                    <h1 class="companyCreatedHeading">Company Created<br>Successfully</h1>
+                    <button class="ClickHereBtn">Click Here !</button>
+                </div>
+            </div>
+        </div>
+        <div class="ActivityBtnCont">
+            <div class="ActivityIconCont">
+                <i class="fas fa-trash-alt activityIcon"></i>
+            </div>
+            <button class="activityBtn">Delete Company</button>
+        </div>
+        <div class="deletePrompt animated slideInDown">
+            <h3 class="deletePromptHeading">Are You Sure ?</h3>
+            <button class="PromptBtn">Ok</button>
+            <button class="PromptBtn">Cancel</button>
+        </div>
+        <div class="ActivityBtnCont">
+            <div class="ActivityIconCont">
+                <i class="fas fa-sign-out-alt activityIcon"></i>
+            </div>
+            <button class="activityBtn">Log Out</button>
+        </div>
+    </div>
+</body>
+
+</html>
