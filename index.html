@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <title>safe doc</title>
+    <meta lang="en-US">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/animate.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <noscript>
+        <h1>please enable javascript.......!</h1>
+        <style>
+            body {
+                background-color: black;
+            }
+
+            #webpage{
+                display: none;
+            }
+            
+            h1 {
+                font-family: calibri;
+                font-size: 100px;
+                color: white;
+                width: auto;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            </style>
+    </noscript>
+</head>
+
+<body>
+    <div id="webpage">
+        <div class="container" id="container">
+            <img class="logo-img" src="images/logo.png" alt="lock Imgage">
+            <!-- <i class="fa fa-lock lock-logo animated infinite heartBeat" aria-hidden="true" ></i> -->
+            <button class="lockBtn" onclick="sidebarOpen()">click here!</button>
+            <h1 class="safeDocText">SAfE dOC</h1>
+            
+        </div>
+        <div id="sideBar">
+            <button id="closeBtn" onclick="sideBarClose()">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+            
+            <h1 class="formTitle">Login User!</h1>
+
+            <form id="loginForm" onsubmit="return login()" autocomplete="off">
+                <input id="username" type="text" name="userName" placeholder=" &#xf2bd; Username or email id">
+                <br>
+                <input id="loginPass" type="password" placeholder="&#xf023; password" name="Passoword">
+                <br>
+                <input class="submitBtn" type="submit" value="Login">
+            </form>
+
+            <h1 class="formTitle">Signup User!</h1>
+
+            <form id="signUpForm" onsubmit="return signUp()" autocomplete="off">
+                <input id="name" type="text" name="name" placeholder="&#xf2bd;Yourname">
+                <br>
+                <input id="email" type="email" name="email" placeholder="&#xf0e0; Email Id" onchange="userExisted()">
+                <span class="spanMessage" id="emailSpan">email is allready registered!</span>
+                <br>
+                <input id="password" type="password" name="passoword" placeholder="&#xf023; Password">
+                <br>
+                <input id="mobile" type="number" name="mobileNumber" placeholder="&#xf10b; Mobile No">
+                <br>
+                <span class="spanMessage" id="signUpMessage">Sign Up success...!</span>
+                <input  id="signUpSubmit" class="submitBtn" type="submit" value="Sign Up">
+
+
+            </form>
+            
+        </div>
+    </div>
+    
+    <script src="script/compatible.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="script/script.js"></script>
+    <script src="script/signUp_login.js"></script>
+    
+</body>
+
+</html>

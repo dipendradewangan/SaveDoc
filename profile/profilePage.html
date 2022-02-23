@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta lang="en-US">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="profileStyle/profile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="profileStyle/mainContentContainer.css">
+    <link rel="stylesheet" href="profileStyle/logout.css">
+</head>
+
+<body>
+    <div id="profilePage">
+        <div class="container" id="initialContainer">
+            <div class="upperCont"></div>
+            <div class="cont">
+                <div class="profile-cont">
+                    <div class="img-cont" id="imgCont">
+                        <i class="fa fa-upload" id="uploadIcon">upload image</i>
+                        <input type="file" accept="image/*" id="uploadBtn" onchange="profilePicUp()">
+                    </div>
+
+                    <h1 class="name" id="name">profile name</h1>
+                    <div class="social-cont">
+                        <a href="#"><i class="fab fa-facebook-square facebook "></i></a>
+                        <a href="#"><i class="far fa-envelope email"></i></a>
+                        <a href="#"><i class="fab fa-twitter twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin linkedin"></i></a>
+                    </div>
+                    <div class="btn-cont">
+                        <button class="btns signOut">Sign Out</button>
+                        <button class="btns next" id="nextBtn" disabled="true">next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mainContentContainer">
+        <div class="header">
+            <h1 class="header-title" id="profileHeader"></h1>
+            <div class="headerDp" id="profilePicCont"></div>
+        </div>
+        <div class="section">
+            <div class="social-nav-cont">
+                <button class="iconBtn"><i class="fab fa-facebook-square facebook icon-btn"></i></button>
+                <button class="iconBtn"><i class="far fa-envelope email icon-btn"></i></button>
+                <button class="iconBtn"><i class="fab fa-twitter twitter icon-btn"></i></button>
+                <button class="iconBtn"><i class="fab fa-linkedin linkedin icon-btn"></i></button>
+            </div>
+            <div class="nav-cont">
+                <button class="navBtn">
+                    <a class="navLink" href="pages/businessPage.html">
+                        <i class="fa fa-briefcase navBtnIcon"></i>
+                        <br>
+                        <span class="btn-span">Business</span>
+                    </a>
+                </button>
+                <button class="navBtn">
+                    <a class="navLink" href="#">
+                        <i class="fas fa-pencil-alt navBtnIcon"></i>
+                        <br>
+                        <span class="btn-span">About Me</span>
+                    </a>
+                </button>
+                <button class="navBtn">
+                    <a class="navLink" href="pages/contectPage.html">
+                        <i class="fa fa-phone navBtnIcon"></i>
+                        <br>
+                        <span class="btn-span">Contacts</span>
+                    </a>
+                </button>
+                <button class="navBtn">
+                    <a class="navLink" href="#">
+                        <i class="fa fa-play navBtnIcon"></i>
+                        <br>
+                        <span class="btn-span">Playlist</span>
+                    </a>
+                </button>
+                <button class="navBtn" onclick="logout() ">
+                    <a class="navLink" href="#">
+                        <i class="fas fa-sign-out-alt navBtnIcon"></i>
+                        <br>
+                        <span class="btn-span">Logout</span>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer">
+        <h1 class="logoutMsg">Please wait...</h1>
+    </div>
+    <script src="script/prifilePicUpload.js"></script>
+    <script src="script/profile.js"></script>
+    <script src="script/profilePicNameShow.js"></script>
+</body>
+
+</html>

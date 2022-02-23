@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="style/contectStyle.css">
+    <link rel="stylesheet" href="style/animate.css">
+</head>
+
+<body>
+    <img class="sideImgBg" src="images/sideImg.png" alt="sideImg">
+    <div class="profileDp" id="profileDp"></div>
+    <div id="section">
+        <div class="contectEntryForm" id="contectEntryForm">
+            <h1 class="heading">Private Contects</h1>
+            <div class="container">
+                <div class="containericon">
+                    <i class="fas fa-plus-circle "></i>
+                </div>
+                <form id="contctInputForm">
+                    <input type="text" name="fullname" id="fullname" placeholder="Fullname">
+                    <br>
+                    <input type="number" name="primaryNumber" id="primaryNumber" placeholder="Primary number">
+                    <br>
+                    <input type="number" name="secondaryNumber" id="secondaryNumber" placeholder="Secondary number">
+                    <br>
+                    <input class="addBtn" type="button" value="Add" onclick="add_contects()">
+                    <span id="successfullySaved">Successfully saved</span>
+                </form>
+            </div>
+        </div>
+        <div id="contectRestore">
+            <div class="contactRestoreContainer">
+                <button class="restoreCloseBtn" onclick="restoreClose()" title="close"><i class="fas fa-times"></i></i>   </button>
+                <h1 class="contactRestoreHeading" id="contactRestoreHeading">Deleted Contects</h1>
+                <table align="center" id="contactStore" cellspacing="1">
+                    <tr class="tableRow">
+                        <th>Contect Name</th>
+                        <th>Primary Number</th>
+                        <th>Secondary Number</th>
+                        <th>Restore Now</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sideBar">
+        <h1 class="contactList" id="contactList">Contacts List </h1>
+        <form>
+            <input type="search" placeholder="search contect here..." oninput="search_contects(this)">
+        </form>
+        <div class="contectListCont" id="contectListCont">
+
+        </div>
+
+        <div class="restore-logout-cont">
+            <button class="restore" onclick="restore_contects()"><i class="fa fa-refresh" aria-hidden="true"></i> restore</button>
+            <button class="logout" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </div>
+    </div>
+    <div class="logoutContainer"><span>Logging out....!</span></div>
+    <script src="script/contectScript.js"></script>
+    <script src="script/contectDesign.js"></script>
+</body>
+
+</html>
